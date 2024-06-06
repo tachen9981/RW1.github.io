@@ -29,8 +29,13 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>untitled2</title>
+<title>untitled2</title>
   <link rel="manifest" href="manifest.json">
+
+  <!-- 请求用户相机访问权限 -->
+  <script>
+    navigator.mediaDevices.getUserMedia({ video: true });
+  </script>
 </head>
 <body>
   <script src="flutter_bootstrap.js" async></script>
